@@ -3,11 +3,12 @@ def ismonotone(a):
   if n == 1:
      return True
   else:
-     if (a[i] >= a[i+1] for i in range(0,n-1) or a[i] <= a[i + 1] for i in range(0, n - 1)):
+     if all(a[i] >= a[i+1] for i in range(0,n-1) or a[i] <= a[i + 1] for i in range(0, n - 1)):
            return True
      else:
           return False
 A = [6 ,5 ,4 ,3]
 print(ismonotone(A)) 
-b = [6 ,2 ,4, 1]
+b = [6 ,2 ,4, 2]
 print(ismonotone(b)) 
+c = [
