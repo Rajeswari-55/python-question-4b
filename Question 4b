@@ -11,4 +11,4 @@ A = [6 ,5 ,4 ,3]
 print(ismonotone(A)) 
 b = [6 ,2 ,4, 2]
 print(ismonotone(b)) 
-c = [
+
